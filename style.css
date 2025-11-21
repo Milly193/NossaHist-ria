@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d0bef2;
+}
+
+/*Estilizando menu*/
+
+.menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: #470a77;
+}
+
+.menu nav .nome{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffce1f;
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 15px;
+}
+
+.menu nav .link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu nav .link li{
+    margin: 0 35px;
+    font-size: 20px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #ffce1f;
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+/*Estilizando menu - mobile*/
+
+
+/*Estilizando foto*/
+
+.img {
+    width: 100%;
+}
+
+.img img{
+    width: 100%;
+}
+
+/*Ajustando card*/
+
+.containerS{
+    display: flex;
+    background-color: #c19bff;
+}
+
+.containerS .card1{
+
+    width: 300px;
+    background-color: #470a77;
+    margin: 35px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 7px 7px 7px #b88917;
+    transition: transform 0.3s ease;
+}
+
+.containerS .card1:hover{
+
+    transform: translateY(-5px); 
+}
+
+.containerS .card1 img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50px;
+    padding: 5px;
+    margin: auto;
+}
+
+.containerS .card1 p{
+    color: #ffce1f;
+}
+
+.containerS .card1 h2{
+    color: #ffce1f;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.containerS .card1 h1{
+    color: #ffce1f;
+    margin-top: 10px;
+}
+
+/*estilizando card 2*/
+
+.containerS .card2{
+
+    width: 300px;
+    background-color: #470a77;
+    margin: 35px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 7px 7px 7px #b88917;
+    transition: transform 0.3s ease;
+
+}
+
+.containerS .card2:hover{
+
+    transform: translateY(-5px);
+}
+
+.containerS .card2 img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50px;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.containerS .card2 p{
+    color: #ffce1f;
+}
+
+.containerS .card2 h2{
+    color: #ffce1f;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.containerS .card2 h1{
+    color: #ffce1f;
+    margin-top: 10px;
+}
+
+/*Ajustado espaçamento*/
+
+main{
+    margin-bottom: 100px;
+}
+
+section{
+    margin-top: 100px;
+}
+
+/*Estilizando img*/
+
+.memoria{
+    width: 100%;
+    display: flex;
+}
+
+.memoria img{
+    width: 30%;
+    margin: 15px;
+    border-radius: 30px;
+    margin-left: 90px;
+}
+
+/*Estilizando text*/
+
+.memoria .text{
+    width: 50%;
+    margin: 25px;
+}
+
+.memoria .text h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    color: #b88917;
+}
+
+.memoria .text p{
+    font-size: 22px;
+    line-height: 30px;
+    color: #b88917;
+    text-align: justify;
+}
+
+/*estilizando rodape*/
+
+footer{
+    background: #470a77;
+}
+
+.rodape{
+    display: flex;
+    color: #ffce1f;
+    padding: 9px;
+    margin-top: 25px;
+}
+
+.rodape p{
+    font-size: 28px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+  hr{
+        color: #b88917;
+        border-width: 2px;
+    }
+    
+    .mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+@media  screen and (max-width: 990px) {
+    
+    body{
+    overflow-x: hidden;
+}
+    
+    /*Cabeçalho*/
+
+    /*.link a{
+        display: none;
+    }*/
+
+    .menu nav .nome{
+        font-size: 30px;
+        padding-left: 4px;
+    }
+
+    /*Estilizando img*/
+
+    .img{
+        width: 100%;
+    }
+
+    /*Estilizando containerS -cards*/
+
+    .containerS{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    /*Estilizando dedicação*/
+    .memoria{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .memoria img{
+        width: 370px;
+        margin-left: 20px;
+        margin-bottom: 45px;
+    }
+
+    .memoria, .text{
+    width: 150%;
+    } 
+
+    section .memoria .text h1{
+    font-size: 29px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    
+    }
+
+    section .memoria .text p{
+    font-size: 18px;
+    line-height: 30px;
+    word-spacing: -3px;
+    padding-left: 15px;
+    }
+
+    .rodape p{
+        font-size: 22px;
+        padding: 9px;
+    }
+
+    /*Hamburguer*/
+
+    .link {
+    display: flex;
+    align-items: center;
+    
+}
+
+.link ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+    .mobile-menu-icon img{
+        padding-left: 15px;
+    }
+    .nav-bar{
+        padding: 1.5rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    hr{
+        color: #b88917;
+        border-width: 2px;
+    }
+     .mobile-menu  .link{
+        background-color: #470a77;
+    }
+
+    .mobile-menu  .link a{
+        color:#ffce1f;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
